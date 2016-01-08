@@ -1,0 +1,38 @@
+﻿@model TransportationManagement.Models.Shipment
+
+@{
+    ViewBag.Title = "Payment";
+}
+
+@using (Html.BeginForm("ValidatePayPal", "PayPal"))
+{
+    <div>
+        <br />
+        <br />
+        <table align="center">
+            <tr>
+                <td>
+                    Shipment ID:
+                </td>
+                <td>
+                    <input type="text" name="shipmentID" value="Please enter tracking ID" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Payment Amount: $
+                </td>
+                <td>
+                    <input type="text" name="totalPrice" value="Please enter payment amt" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="btnConfirm" value="Check Out with Paypal" />
+                </td>
+            </tr>
+        </table>
+    </div>
+}
+

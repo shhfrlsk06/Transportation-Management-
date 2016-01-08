@@ -1,0 +1,68 @@
+﻿@model IEnumerable<TransportationManagement.Models.Company>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm())
+{
+    <p>
+        Search: @Html.TextBox("SearchString") <br />
+        <input type="submit" value="Filter" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Industry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </th>
+        <th></th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClientNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Industry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CompanyId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CompanyId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CompanyId })
+        </td>
+        <td>
+            @Html.ActionLink("View Contacts", "CompanyContacts", new { id = item.CompanyId })
+        </td>
+        <td>
+            @Html.ActionLink("View Address", "CompanyAddress", new { id = item.CompanyId })
+        </td>
+        <td>
+            @Html.ActionLink("Add Contact", "CreateContact", new { id=item.CompanyId })
+        </td>
+        <td>
+            @Html.ActionLink("Add Address", "CreateAddress", new { id=item.CompanyId })
+        </td>
+        <td>
+            @Html.ActionLink("Add Shipment", "CreateShipment", new { id=item.CompanyId })
+        </td>    
+    </tr>
+}
+
+</table>

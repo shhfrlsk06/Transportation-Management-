@@ -1,0 +1,23 @@
+﻿@model TransportationManagement.Models.Shipment
+
+@{
+    ViewBag.Title = "Shipment Successful";
+}
+
+<h2></h2>
+
+<div class="text-center">
+    <h1>Shipment Successful!</h1>
+    <hr />
+    <div class="row">
+        <span> Your TrackingId is :</span> <b>@TempData["TrackingId"]</b>
+        <br />
+    </div>
+    <div class="row">
+        <span> Keep this for your records.</span>
+        <br />
+    </div>
+        <div class="row">
+            <a href="https://my.yrc.com/national/pdf/gbol.pdf" target="_blank"><button class="btn"> Print Bill of Lading</button></a>
+        </div>
+    </div>

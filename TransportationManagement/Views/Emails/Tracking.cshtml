@@ -1,0 +1,14 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model TransportationManagement.Models.TrackingEmail
+To: @Model.To
+From: mailer@example.com
+Subject: Your TrackingID
+
+Hello,
+Your TrackingId is:
+
+@Model.Comment

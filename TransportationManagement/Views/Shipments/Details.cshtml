@@ -1,0 +1,244 @@
+﻿@model TransportationManagement.Models.Shipment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Shipment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipTo_EmailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipTo_EmailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipTo_Company)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipTo_Company)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipTo_Attention)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipTo_Attention)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipTo_AddressLine1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipTo_AddressLine1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipTo_AddressLine2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipTo_AddressLine2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipTo_AddressLine3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipTo_AddressLine3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipTo_City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipTo_City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipTo_State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipTo_State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipTo_PostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipTo_PostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipTo_Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipTo_Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipFrom_EmailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipFrom_EmailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipFrom_Company)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipFrom_Company)
+        </dd>
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipFrom_AddressLine1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipFrom_AddressLine1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipFrom_AddressLine2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipFrom_AddressLine2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipFrom_AddressLine3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipFrom_AddressLine3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipFrom_City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipFrom_City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipFrom_State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipFrom_State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipFrom_PostalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipFrom_PostalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipFrom_Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipFrom_Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Depth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Depth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Width)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Width)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrackingId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrackingId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReferenceNumber1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReferenceNumber1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReferenceNumber2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReferenceNumber2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InvoiceAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InvoiceAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipmentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipmentDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ShipmentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

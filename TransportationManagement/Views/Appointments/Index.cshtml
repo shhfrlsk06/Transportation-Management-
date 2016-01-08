@@ -1,0 +1,11 @@
+﻿@model IEnumerable<TransportationManagement.Models.Appointment>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Scheduling Calendar</h2>
+<div class="scheduler_container">
+    @Html.Raw(Model.Render())
+</div>
