@@ -1,5 +1,6 @@
 # Transportation-Management-
 Capstone project written in C# using ASP.NET MVC, Entity Framework, Code First Migrations, Google Distance Matrix API, DHX Scheduler and PayPal. 
+TFS was used as source control for this project.
 
 This project was intended to be used as online interface for a transportation company.  It features:
 
